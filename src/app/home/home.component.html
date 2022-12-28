@@ -1,0 +1,27 @@
+<input type="button" value="Loadstudentdata" (click)="loaduserdata()"> <br>
+
+<table border="3">
+<tr>
+    <td>id</td>
+    <td>name</td>
+    <td>semester</td>
+    <td>english</td>
+    <td>math</td>
+    <td>science</td>
+    <td>totalavg</td>
+    
+</tr>
+
+<tr *ngFor="let studentss of students">
+    <td>{{studentss.id}}</td>
+    <td>{{studentss.name}}</td>
+    <td>{{studentss.semester}}</td>
+    <td>{{studentss.english}}</td>
+    <td>{{studentss.math}}</td>
+    <td>{{studentss.science}}</td>
+    <td>{{studentss.totalavg/2}}</td>
+</tr>
+</table>
+
+
+<!-- <input type="button" value="load data" (click)="loaduserdata()"> -->
